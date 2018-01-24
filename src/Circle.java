@@ -23,7 +23,7 @@ class Circle {
         System.out.println("Координаты центра круга в случайном дипазоне: по X = " + x + " по У = " + y);
     }
 
-    //координаты центра окружности в случайном диапазоне
+    //расстояние между центрами двух окружностей
     double distCen(Circle cir1, Circle cir2) {
         double lenghtX;
         double lenghtY;
