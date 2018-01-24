@@ -24,25 +24,24 @@ class Circle {
     }
 
     //расстояние между центрами двух окружностей
-    double distCen(Circle cir1, Circle cir2) {
+    double distCen(Circle cir1) {
         double lenghtX;
         double lenghtY;
-        if ((((cir1.x <= 0) && (cir2.x >= 0)) || ((cir1.x >= 0) && (cir2.x <= 0)))) {
-            lenghtX = Math.abs(Math.abs(cir1.x) + Math.abs(cir2.x));
+        if ((((cir1.x <= 0) && (x >= 0)) || ((cir1.x >= 0) && (x <= 0)))) {
+            lenghtX = Math.abs(Math.abs(cir1.x) + Math.abs(x));
 
         } else {
-            lenghtX = Math.abs(Math.abs(cir1.x) - Math.abs(cir2.x));
+            lenghtX = Math.abs(Math.abs(cir1.x) - Math.abs(x));
         }
-        if ((((cir1.y <= 0) && (cir2.y >= 0)) || ((cir1.y >= 0) && (cir2.y <= 0)))) {
-            lenghtY = Math.abs(Math.abs(cir1.y) + Math.abs(cir2.y));
+        if ((((cir1.y <= 0) && (y >= 0)) || ((cir1.y >= 0) && (y <= 0)))) {
+            lenghtY = Math.abs(Math.abs(cir1.y) + Math.abs(y));
         } else {
-            lenghtY = Math.abs(Math.abs(cir1.y) - Math.abs(cir2.y));
+            lenghtY = Math.abs(Math.abs(cir1.y) - Math.abs(y));
         }
 
         double lenghtDiag = Math.sqrt(lenghtX * lenghtX + lenghtY * lenghtY);
         return lenghtDiag;
 
     }
-
 }
 
