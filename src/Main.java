@@ -7,24 +7,23 @@ public class Main {
         o2.lenghtCir();
         o2.rundCen();
 
-        System.out.println("Расстояние между центрами окружностей " + (o1.distCen(o1, o2)));
-        if ((o1.distCen(o1, o2)) > (o1.r + o2.r)) {
+        System.out.println("Расстояние между центрами окружностей " + (o1.distCen(o2)));
+        if ((o1.distCen(o2)) > (o1.r + o2.r)) {
             System.out.println("Окружности не касаются в одной точке");
         }
-        if (((o1.distCen(o1, o2)) == (o1.r + o2.r))) {
+        if (((o1.distCen(o2)) == (o1.r + o2.r))) {
             System.out.println("Окружности касаются в одной точке");
         }
         if (o1.r > o2.r) {
-            if ((o1.r - o2.r) == (o1.distCen(o1, o2))) {
+            if ((o1.r - o2.r) == (o1.distCen(o2))) {
                 System.out.println("Окружности касаются в одной точке");
             }
         }
         if (o2.r > o1.r) {
-            if ((o2.r - o1.r) == (o1.distCen(o1, o2))) {
+            if ((o2.r - o1.r) == (o1.distCen(o2))) {
                 System.out.println("Окружности касаются в одной точке");
             }
         }
 
     }
 }
-
