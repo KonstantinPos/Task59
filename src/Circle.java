@@ -16,7 +16,7 @@ class Circle {
         double lenCir = Math.PI * 2 * r;
         System.out.println("Длина окружности равна " + lenCir);
     }
-
+    //координаты центра круга в случайном дипазоне
     void rundCen() {
         this.x = ((Math.random() * 198) - 99);
         this.y = ((Math.random() * 198) - 99);
